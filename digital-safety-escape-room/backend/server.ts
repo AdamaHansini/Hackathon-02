@@ -1,21 +1,17 @@
 import express from 'express';
-import path from 'path';
 import 'dotenv/config';
-import { createServer as createViteServer } from 'vite';
-import { connectDB } from './server/src/config/db.js';
-import { seedDatabase } from './server/src/data/seedData.js';
-import authRoutes from './server/src/routes/authRoutes.js';
-import userRoutes from './server/src/routes/userRoutes.js';
-import challengeRoutes from './server/src/routes/challengeRoutes.js';
-import gameRoutes from './server/src/routes/gameRoutes.js';
-import resultRoutes from './server/src/routes/resultRoutes.js';
-import adminRoutes from './server/src/routes/adminRoutes.js';
-import { resultController } from './server/src/controllers/resultController.js';
-import { errorHandler } from './server/src/middleware/errorMiddleware.js';
+import { connectDB } from './src/config/db.js';
+import { seedDatabase } from './src/data/seedData.js';
+import authRoutes from './src/routes/authRoutes.js';
+import userRoutes from './src/routes/userRoutes.js';
+import challengeRoutes from './src/routes/challengeRoutes.js';
+import gameRoutes from './src/routes/gameRoutes.js';
+import resultRoutes from './src/routes/resultRoutes.js';
+import adminRoutes from './src/routes/adminRoutes.js';
+import { resultController } from './src/controllers/resultController.js';
+import { errorHandler } from './src/middleware/errorMiddleware.js';
 
 const PORT = Number(process.env.PORT) || 3000;
-const isProduction = process.env.NODE_ENV === 'production';
-
 async function startServer() {
   const app = express();
 
@@ -58,21 +54,6 @@ async function startServer() {
 
   // API Error Handler
   app.use('/api', errorHandler);
-
-  // Vite Middleware (development) or Static Serve (production)
-  if (!isProduction) {
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: 'spa',
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.resolve(process.cwd(), 'dist');
-    app.use(express.static(distPath));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
-    });
-  }
 
   app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Digital Safety Escape Room server active on http://0.0.0.0:${PORT}`);

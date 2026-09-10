@@ -1,5 +1,35 @@
 # 🛡️ Digital Safety Escape Room
 
+## Project Structure and Render Deployment
+
+The project has two application folders:
+
+```text
+digital-safety-escape-room/
+├── frontend/
+└── backend/
+```
+
+Deploy them as two separate Render services.
+
+### Frontend Static Site
+
+- Root Directory: `frontend`
+- Build Command: `npm install && npm run build`
+- Publish Directory: `dist`
+- Environment variable: `VITE_API_URL=https://YOUR-BACKEND-SERVICE.onrender.com/api`
+
+### Backend Web Service
+
+- Root Directory: `backend`
+- Build Command: `npm install && npm run build`
+- Start Command: `npm start`
+- Environment variables: copy the values from `backend/.env.example`
+
+The backend build creates `backend/dist/server.cjs`. Do not use
+`node dist/server.cjs` from the repository root; Render must use `backend`
+as the service root.
+
 **Team 18**
 
 A short, interactive cybersecurity awareness game that teaches users to
