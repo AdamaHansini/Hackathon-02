@@ -21,8 +21,16 @@ async function startServer() {
 
   // CORS Headers
   app.use((req, res, next) => {
-    const allowedOrigin = process.env.CLIENT_URL || '*';
+    const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:5173')
+      .split(',')
+      .map(origin => origin.trim())
+      .filter(Boolean);
+    const requestOrigin = req.headers.origin;
+    const allowedOrigin = requestOrigin && allowedOrigins.includes(requestOrigin)
+      ? requestOrigin
+      : allowedOrigins[0];
     res.header('Access-Control-Allow-Origin', allowedOrigin);
+    res.header('Vary', 'Origin');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     if (req.method === 'OPTIONS') {
