@@ -18,7 +18,7 @@ Deploy the backend on Render and the frontend on Vercel.
 - Framework Preset: `Vite`
 - Build Command: `npm run build`
 - Output Directory: `dist`
-- Environment variable: `VITE_API_URL=https://YOUR-BACKEND-SERVICE.onrender.com/api`
+- Environment variable: `VITE_API=https://YOUR-BACKEND-SERVICE.onrender.com/api`
 
 The `frontend/vercel.json` file preserves client-side routes when a page is
 refreshed.
