@@ -1,0 +1,1115 @@
+{
+  "users": [
+    {
+      "_id": "332b6360185dfd7abae2ecd0",
+      "name": "System Admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$oLLjN7W5dVaO7C04.5zK8ebtft9y4ppd6n7a82MWECA.D8t4hclkW",
+      "role": "admin",
+      "gamesPlayed": 12,
+      "gamesCompleted": 11,
+      "bestScore": 95,
+      "averageScore": 88,
+      "accuracy": 92,
+      "badges": [
+        "CYBER SAFETY EXPERT"
+      ],
+      "achievements": [
+        "PHISHING_HUNTER",
+        "PASSWORD_GUARDIAN",
+        "QR_DETECTIVE",
+        "SCAM_SPOTTER",
+        "CYBER_SAFETY_EXPERT",
+        "FLAWLESS_ESCAPE"
+      ],
+      "createdAt": "2026-09-10T07:15:32.737Z",
+      "updatedAt": "2026-09-10T07:15:32.737Z"
+    },
+    {
+      "_id": "4c1a768c5d67f594155779fb",
+      "name": "Alex CyberCadet",
+      "email": "demo@example.com",
+      "password": "$2b$10$DQmvhk.TpmQAwc0nh6JRUubOO0YZuD4IHDzdFfVz4kLK//KF7I0c2",
+      "role": "user",
+      "gamesPlayed": 9,
+      "gamesCompleted": 3,
+      "bestScore": 80,
+      "averageScore": 72,
+      "accuracy": 78,
+      "badges": [
+        "CYBER SMART"
+      ],
+      "achievements": [
+        "PHISHING_HUNTER",
+        "PASSWORD_GUARDIAN"
+      ],
+      "createdAt": "2026-09-10T07:15:32.827Z",
+      "updatedAt": "2026-09-10T07:35:43.920Z"
+    },
+    {
+      "_id": "98404563db6c710faa4b1392",
+      "name": "Hansini",
+      "email": "hansini@gmail.com",
+      "password": "$2b$10$M9Ou8fbdradWEPgZYepheedNv7qeo9.61Jn9Vv54Au1V87fsBmyb.",
+      "role": "user",
+      "gamesPlayed": 2,
+      "gamesCompleted": 1,
+      "bestScore": 90,
+      "averageScore": 65,
+      "accuracy": 86,
+      "badges": [
+        "CYBER SAFETY EXPERT"
+      ],
+      "achievements": [
+        "CYBER_SAFETY_EXPERT",
+        "FLAWLESS_ESCAPE",
+        "FIRST_ESCAPE"
+      ],
+      "createdAt": "2026-09-10T07:18:56.305Z",
+      "updatedAt": "2026-09-10T07:26:37.673Z"
+    },
+    {
+      "_id": "1da5d8bdc97e635114acce73",
+      "name": "Taylor Swift",
+      "email": "taylor@example.com",
+      "password": "$2b$10$1xpKWAWCVEFuDvQPnOp7OeI29UWpQSkGcxfUt5xDgPGy7V6S7/RI6",
+      "role": "user",
+      "gamesPlayed": 0,
+      "gamesCompleted": 0,
+      "bestScore": 0,
+      "averageScore": 0,
+      "accuracy": 0,
+      "badges": [],
+      "achievements": [],
+      "createdAt": "2026-09-10T07:24:32.701Z",
+      "updatedAt": "2026-09-10T07:24:32.701Z"
+    }
+  ],
+  "challenges": [
+    {
+      "_id": "daf6af8502adcea89cbc8946",
+      "title": "Suspicious Urgent Bank Security Notice",
+      "category": "PHISHING",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "From: Security Team <security-alert@chase-secure-verify.net>\nSubject: 🚨 URGENT: Unauthorized login detected on your savings account!\nContent: \"Dear Customer, We detected an irregular login from Russia at 03:14 AM. Your debit card and funds will be permanently frozen within 15 minutes unless you immediately verify your credentials at: http://chase-secure-verify.net/auth/login\"",
+      "question": "What is the safest action to take with this email?",
+      "options": [
+        "Click the link quickly to verify your account before the 15-minute freeze",
+        "Mark email as Phishing and visit your bank directly via the official mobile app or bookmarked URL",
+        "Reply with your account number asking for confirmation",
+        "Forward the email to friends to warn them about the freeze"
+      ],
+      "correctAnswer": "Mark email as Phishing and visit your bank directly via the official mobile app or bookmarked URL",
+      "explanation": "The sender domain (@chase-secure-verify.net) is not the legitimate bank domain (chase.com). The artificial urgency (\"15 minutes freeze\") and direct external login link are classic indicators of a credential-harvesting phishing attack.",
+      "warningSigns": [
+        "Forged external domain (@chase-secure-verify.net instead of chase.com)",
+        "Manufactured panic and urgency (15 minutes deadline)",
+        "Threat of account freeze if credentials are not entered immediately"
+      ],
+      "createdAt": "2026-09-10T07:15:32.827Z",
+      "updatedAt": "2026-09-10T07:15:32.827Z"
+    },
+    {
+      "_id": "8716b77b609d6f011ca509ea",
+      "title": "College Internship Offer with DocuSign Attachment",
+      "category": "PHISHING",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "From: Dean Career Office <career-portal@university-jobs-careers.co>\nSubject: Offer Letter: Paid Summer Research Fellow ($45/hr)\nContent: \"Congratulations! You have been accepted for the Cyber Research Fellowship. Please download and open the attached 'Offer_Letter.pdf.exe' and enable macros to review your stipend contract.\"",
+      "question": "Is this document safe to download and execute?",
+      "options": [
+        "Phishing / Malware: The double extension (.pdf.exe) and macro prompt indicates an executable payload",
+        "Safe: Universities regularly use third-party portals to send contracts",
+        "Safe: If you run it inside an incognito tab it cannot infect your computer",
+        "Safe: The Dean office frequently recruits students directly via email"
+      ],
+      "correctAnswer": "Phishing / Malware: The double extension (.pdf.exe) and macro prompt indicates an executable payload",
+      "explanation": "The attachment uses a disguised double extension (.pdf.exe) to trick users into running executable code disguised as a document. Real offer letters never require enabling macros or running .exe files.",
+      "warningSigns": [
+        "Disguised file extension (.pdf.exe)",
+        "Prompt requesting macro execution or binary launch",
+        "Spoofed university domain (@university-jobs-careers.co)"
+      ],
+      "createdAt": "2026-09-10T07:15:32.827Z",
+      "updatedAt": "2026-09-10T07:15:32.827Z"
+    },
+    {
+      "_id": "43699f79e541baa6e96a8d44",
+      "title": "Social Media Blue Badge Verification Alert",
+      "category": "PHISHING",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "From: Instagram Creator Support <support@instagrarn-helpdesk.com>\nSubject: Your verified badge has been approved!\nContent: \"Hi Creator! Your profile qualifies for immediate verification badge. To complete identity confirmation and avoid badge cancellation within 24 hours, confirm your 2FA backup codes and password here: http://bit.ly/ig-badge-claim-99\"",
+      "question": "How should you treat this message?",
+      "options": [
+        "Enter your username and password, but refuse to enter 2FA codes",
+        "Phishing: Treat as credential theft; report and delete without clicking shortened links",
+        "Click the Bitly link to see if the page has an SSL padlock icon",
+        "Forward to your followers to show you got verified"
+      ],
+      "correctAnswer": "Phishing: Treat as credential theft; report and delete without clicking shortened links",
+      "explanation": "Notice the lookalike typo in the sender domain (\"instagrarn\" with \"rn\" mimicking \"m\") and the shortened link (bit.ly) hiding the destination. Legitimate platforms never ask for your 2FA backup codes via email.",
+      "warningSigns": [
+        "Lookalike domain typo (instagrarn using \"rn\" instead of \"m\")",
+        "Masked shortened URL (bit.ly)",
+        "Request for confidential 2FA backup codes"
+      ],
+      "createdAt": "2026-09-10T07:15:32.827Z",
+      "updatedAt": "2026-09-10T07:15:32.827Z"
+    },
+    {
+      "_id": "c8062451c1d8d5d40617a9a2",
+      "title": "Package Delivery Address Missing Notification",
+      "category": "PHISHING",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "From: FedEx Parcel Center <updates@fedx-tracking-hub.info>\nSubject: Delivery Failed: Street number missing for tracking #US-9823194\nContent: \"Your parcel could not be delivered due to an incomplete delivery address. A redelivery fee of $1.85 is required. Pay online within 4 hours to avoid package return: https://fedx-customs-pay.com\"",
+      "question": "What is the correct cybersecurity assessment?",
+      "options": [
+        "Pay the small $1.85 fee because it is negligible and worth the package",
+        "Phishing: Smishing/phishing ploy designed to harvest credit card CVV and billing information",
+        "Safe: Courier services always ask for minor redelivery fees online",
+        "Forward your credit card number via reply email"
+      ],
+      "correctAnswer": "Phishing: Smishing/phishing ploy designed to harvest credit card CVV and billing information",
+      "explanation": "Attackers use small dollar amounts ($1-$3) as bait so victims lower their guard. Once payment details are entered, cybercriminals drain the card or sell the credentials on illicit forums.",
+      "warningSigns": [
+        "Misspelled sender domain (fedx instead of fedex.com)",
+        "Small unexpected fee demanded to create low psychological resistance",
+        "Unsolicited package tracking when you did not order or expect anything"
+      ],
+      "createdAt": "2026-09-10T07:15:32.828Z",
+      "updatedAt": "2026-09-10T07:15:32.828Z"
+    },
+    {
+      "_id": "776e9c2240ddc8a8c0392118",
+      "title": "IT Helpdesk Mandatory Office365 Password Reset",
+      "category": "PHISHING",
+      "difficulty": "HARD",
+      "points": 30,
+      "active": true,
+      "scenario": "From: Global IT Support <admin@tenant-portal.azurewebsites.net>\nSubject: Action Required: Your organization email password expires in 2 hours\nContent: \"All staff are required to migrate to the new Single Sign-On certificate. Keep your existing password by logging in to synchronize active directory: https://login.microsoftonline.corp-auth.com\"",
+      "question": "Why is this enterprise phishing simulation dangerous?",
+      "options": [
+        "It is legitimate because Azure and Microsoft domains are trusted by default",
+        "It is a sophisticated subdomain spoofing attack targeting corporate credentials",
+        "It is safe because corporate policies often expire passwords in 2 hours",
+        "It is safe as long as the user checks that the page uses HTTPS"
+      ],
+      "correctAnswer": "It is a sophisticated subdomain spoofing attack targeting corporate credentials",
+      "explanation": "The URL \"login.microsoftonline.corp-auth.com\" actually belongs to the rogue root domain \"corp-auth.com\", NOT microsoft.com. Attackers often host phishing pages on cloud providers (Azure/AWS) to pass initial automated filters.",
+      "warningSigns": [
+        "Subdomain spoofing: root domain is corp-auth.com, not microsoftonline.com",
+        "Free cloud hosting subdomain (azurewebsites.net)",
+        "False sense of convenience (\"keep your existing password\")"
+      ],
+      "createdAt": "2026-09-10T07:15:32.828Z",
+      "updatedAt": "2026-09-10T07:15:32.828Z"
+    },
+    {
+      "_id": "d908904bc56bc8be52d23626",
+      "title": "Selecting the Strongest Password Strategy",
+      "category": "PASSWORD",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "You are creating credentials for your primary email and cloud storage accounts. Which of the following candidate passwords offers the highest resistance against brute-force and dictionary attacks?",
+      "question": "Which password is mathematically and structurally the strongest?",
+      "options": [
+        "P@ssw0rd2024!",
+        "Correct-Horse-Battery-Staple#982",
+        "JohnDoe_Nov1995",
+        "qwertyuiop12345"
+      ],
+      "correctAnswer": "Correct-Horse-Battery-Staple#982",
+      "explanation": "Passphrases combining 4+ random words with high character length (30+ characters) have exponentially higher entropy (trillions of years to crack) compared to predictable dictionary word substitutions like P@ssw0rd.",
+      "warningSigns": [
+        "Predictable leetspeak (@ for a, 0 for o) is already indexed in attacker wordlists",
+        "Personal dates (birthdays, names) are easily found via social engineering"
+      ],
+      "createdAt": "2026-09-10T07:15:32.828Z",
+      "updatedAt": "2026-09-10T07:15:32.828Z"
+    },
+    {
+      "_id": "05d83bce2ba1cd5799e5be20",
+      "title": "Avoiding Password Reuse Vulnerabilities",
+      "category": "PASSWORD",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "A user uses the password \"SummerBreeze!88\" for their personal gaming forum, university portal, bank account, and personal email. The gaming forum suffers a public data breach.",
+      "question": "What immediate cybersecurity threat does the user face?",
+      "options": [
+        "No risk, because the gaming forum has no money in it",
+        "Credential Stuffing attack across bank, university, and email accounts",
+        "The attacker will only be able to access the game forum",
+        "The browser will automatically change passwords on all other sites"
+      ],
+      "correctAnswer": "Credential Stuffing attack across bank, university, and email accounts",
+      "explanation": "In a Credential Stuffing attack, cybercriminals use automated scripts to test breached username/password pairs against hundreds of other popular services like banks, email, and social networks.",
+      "warningSigns": [
+        "Password reuse across low-security and high-security sites",
+        "Absence of a password manager or unique per-site secrets"
+      ],
+      "createdAt": "2026-09-10T07:15:32.828Z",
+      "updatedAt": "2026-09-10T07:15:32.828Z"
+    },
+    {
+      "_id": "acd37c4614dea9dbbc745b71",
+      "title": "Evaluating Common Leetspeak vs Length Entropy",
+      "category": "PASSWORD",
+      "difficulty": "HARD",
+      "points": 30,
+      "active": true,
+      "scenario": "Compare the two passwords:\nPassword A: \"Tr0ub4dor&3\" (11 characters, mixed case, numbers, symbol)\nPassword B: \"velvet-cloud-whistle-granite-42\" (31 characters, dictionary words, hyphens, numbers)",
+      "question": "Which statement accurately represents their cryptographic resistance?",
+      "options": [
+        "Password A is stronger because special characters always beat plain words regardless of length",
+        "Password B is vastly stronger because length contributes exponentially more entropy than leetspeak",
+        "Both passwords have identical security because both contain numbers",
+        "Password A is impossible to crack with modern GPUs"
+      ],
+      "correctAnswer": "Password B is vastly stronger because length contributes exponentially more entropy than leetspeak",
+      "explanation": "Entropy scales exponentially with total character length. Attackers utilize rule-based cracking tools (Hashcat, John the Ripper) that specifically target common substitutions like \"0\" for \"o\" and \"4\" for \"a\" in seconds.",
+      "warningSigns": [
+        "Short length (<14 characters) even with symbols is vulnerable to modern hashcat clusters",
+        "Common substitution rules are hardcoded into cracker dictionaries"
+      ],
+      "createdAt": "2026-09-10T07:15:32.829Z",
+      "updatedAt": "2026-09-10T07:15:32.829Z"
+    },
+    {
+      "_id": "e0e5cff2bb364e22a2bb013e",
+      "title": "Safe Password Storage and Recovery Practices",
+      "category": "PASSWORD",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "Which of the following represents the safest method to store and manage your complex passwords?",
+      "question": "What is the recommended industry best practice?",
+      "options": [
+        "Write them down on a sticky note attached to the underside of your laptop keyboard",
+        "Store them in an unencrypted plaintext file called \"passwords.txt\" on your desktop",
+        "Use an encrypted, audited Password Manager with strong master passphrase and hardware 2FA",
+        "Email the passwords to yourself with subject \"Important Secrets\""
+      ],
+      "correctAnswer": "Use an encrypted, audited Password Manager with strong master passphrase and hardware 2FA",
+      "explanation": "Encrypted password managers (Bitwarden, 1Password, KeePass) utilize client-side AES-256 encryption where only you possess the master decryption key.",
+      "warningSigns": [
+        "Plaintext password files on desktop",
+        "Unencrypted cloud storage of sensitive credentials"
+      ],
+      "createdAt": "2026-09-10T07:15:32.829Z",
+      "updatedAt": "2026-09-10T07:15:32.829Z"
+    },
+    {
+      "_id": "986fec25843def4a6791c3dd",
+      "title": "Multi-Factor Authentication (MFA) Selection",
+      "category": "PASSWORD",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "You are securing your bank and cloud accounts with two-factor authentication. You can choose between SMS verification codes or an Authenticator App / Hardware Security Key (FIDO2/WebAuthn).",
+      "question": "Why are Authenticator Apps or FIDO2 Security Keys preferred over SMS codes?",
+      "options": [
+        "SMS codes are vulnerable to SIM-swapping, interception, and SS7 telecom exploits",
+        "SMS codes cost money for each text message",
+        "Authenticator apps do not require any mathematical algorithm",
+        "SMS codes expire too slowly compared to apps"
+      ],
+      "correctAnswer": "SMS codes are vulnerable to SIM-swapping, interception, and SS7 telecom exploits",
+      "explanation": "SIM swapping allows an attacker to bribe or trick telecom operators into redirecting your phone number to their own SIM card, immediately intercepting SMS authentication codes.",
+      "warningSigns": [
+        "Reliance on SMS 2FA for high-value financial accounts",
+        "Telecom social engineering vulnerabilities"
+      ],
+      "createdAt": "2026-09-10T07:15:32.829Z",
+      "updatedAt": "2026-09-10T07:15:32.829Z"
+    },
+    {
+      "_id": "34d2766bb937ced34ca97d9b",
+      "title": "Public Parking Meter Physical Sticker Overlay",
+      "category": "FAKE_QR",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "You park your car in a downtown municipal parking zone. On the parking meter, you notice a shiny adhesive QR code sticker pasted unevenly directly OVER the original painted municipal instructions. When scanned, it opens: \"http://park-city-paynow.online/quickpay\"",
+      "question": "Is this QR code safe to pay your parking through?",
+      "options": [
+        "SUSPICIOUS: Physical sticker tampering (quishing) directing to an unofficial domain",
+        "SAFE: Cities frequently paste sticker updates over old payment meters",
+        "SAFE: As long as the parking meter machine is turned on",
+        "SAFE: Because the URL has the word \"paynow\" in it"
+      ],
+      "correctAnswer": "SUSPICIOUS: Physical sticker tampering (quishing) directing to an unofficial domain",
+      "explanation": "Criminals paste fraudulent QR stickers over legitimate payment meters, vending machines, and posters (\"Quishing\"). The URL leads to an unofficial rogue site designed to steal payment card data.",
+      "warningSigns": [
+        "Physical sticker slapped over original signage",
+        "Unofficial top-level domain (.online instead of official city .gov)",
+        "No official municipal branding or app integration"
+      ],
+      "createdAt": "2026-09-10T07:15:32.829Z",
+      "updatedAt": "2026-09-10T07:15:32.829Z"
+    },
+    {
+      "_id": "d39ae862e931debf61e779a8",
+      "title": "Restaurant Table QR Code Menu with Wi-Fi Credential Prompt",
+      "category": "FAKE_QR",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "You sit down at a local café and scan the wooden table QR code expecting to view the dinner menu. The webpage opens and immediately displays: \"To view menu, please connect your Google or Facebook account to authorize guest Wi-Fi access.\"",
+      "question": "What is your security assessment of this menu QR?",
+      "options": [
+        "SUSPICIOUS: Menus are static documents and should never demand OAuth social logins or credentials",
+        "SAFE: Cafes need to collect marketing demographics before showing menus",
+        "SAFE: You can use your school email address to log in safely",
+        "SAFE: Social logins have two-factor protection so there is no harm"
+      ],
+      "correctAnswer": "SUSPICIOUS: Menus are static documents and should never demand OAuth social logins or credentials",
+      "explanation": "A legitimate digital menu never requires logging into personal social media or Google accounts. This is a rogue phishing landing page or data harvester.",
+      "warningSigns": [
+        "Demand for personal account credentials to access public content",
+        "OAuth permissions requesting profile and contact access for simple viewing"
+      ],
+      "createdAt": "2026-09-10T07:15:32.830Z",
+      "updatedAt": "2026-09-10T07:15:32.830Z"
+    },
+    {
+      "_id": "c41a217888ea5f12e9f4cf12",
+      "title": "Transit Hub Free High-Speed Wi-Fi QR Poster",
+      "category": "FAKE_QR",
+      "difficulty": "HARD",
+      "points": 30,
+      "active": true,
+      "scenario": "At an airport departure lounge, an unofficial paper flyer taped to a pillar says: \"SCAN FOR COMPLIMENTARY 5G ULTRA-FAST AIRPORT WI-FI\". Scanning prompts you to install a custom \"Airport-Secure-Profile.mobileconfig\" SSL profile on your smartphone.",
+      "question": "What danger does installing this profile pose?",
+      "options": [
+        "SUSPICIOUS: Installing root certificates or configuration profiles allows Man-In-The-Middle (MITM) decryption of all your encrypted web traffic",
+        "SAFE: Airport profiles are required for secure certificate validation",
+        "SAFE: Phones prevent any network profile from reading passwords",
+        "SAFE: Apple and Android do not permit malicious Wi-Fi configurations"
+      ],
+      "correctAnswer": "SUSPICIOUS: Installing root certificates or configuration profiles allows Man-In-The-Middle (MITM) decryption of all your encrypted web traffic",
+      "explanation": "Custom device configuration profiles (.mobileconfig) can install root Certificate Authority (CA) certs. This gives malicious actors full access to inspect your encrypted HTTPS traffic and banking sessions.",
+      "warningSigns": [
+        "Request to install configuration profiles or root certificates",
+        "Unofficial printed paper flyer taped in public spaces",
+        "Offer of \"free ultra-fast\" utilities as bait"
+      ],
+      "createdAt": "2026-09-10T07:15:32.830Z",
+      "updatedAt": "2026-09-10T07:15:32.830Z"
+    },
+    {
+      "_id": "c6e9b6a8df73d7190ee2a082",
+      "title": "Conference Badge Raffle Scratch-and-Win QR",
+      "category": "FAKE_QR",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "During a tech conference, someone hands you a flyer: \"You won a $500 Amazon Gift Card! Scan this QR code now to claim your payout directly to your Venmo or PayPal account.\" The QR points to: \"http://claim-gift-cards-instant.xyz\"",
+      "question": "How should you categorize this QR code?",
+      "options": [
+        "SUSPICIOUS: Unsolicited prize claim with shady TLD (.xyz) aiming to steal payment accounts",
+        "SAFE: Tech conferences regularly give out generous cash rewards to attendees",
+        "SAFE: Venmo has buyer protection so scanning is risk-free",
+        "SAFE: You can enter someone else's phone number to test it"
+      ],
+      "correctAnswer": "SUSPICIOUS: Unsolicited prize claim with shady TLD (.xyz) aiming to steal payment accounts",
+      "explanation": "Unexpected gift card and prize claims are standard social engineering bait. The shady top level domain (.xyz) and demand for payment account credentials indicate financial fraud.",
+      "warningSigns": [
+        "Unrealistic unsolicited reward ($500 free gift card)",
+        "Suspicious non-standard domain extension (.xyz)",
+        "Immediate demand for payment account credentials"
+      ],
+      "createdAt": "2026-09-10T07:15:32.830Z",
+      "updatedAt": "2026-09-10T07:15:32.830Z"
+    },
+    {
+      "_id": "74b40284a32d14fde50a17f1",
+      "title": "Cryptocurrency ATM Emergency Maintenance QR",
+      "category": "FAKE_QR",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "You are depositing cash at a crypto terminal. A paper sign on the machine screen reads: \"Hardware malfunction! Scan this temporary backup deposit QR code to route your deposit safely.\"",
+      "question": "What is happening in this scenario?",
+      "options": [
+        "SUSPICIOUS: Direct wallet address redirection fraud; any funds deposited will go to the thief's wallet",
+        "SAFE: Backup paper QRs are standard bank redundancy protocols",
+        "SAFE: Blockchain transactions can be reversed if it is fraudulent",
+        "SAFE: As long as the QR scans in your official wallet"
+      ],
+      "correctAnswer": "SUSPICIOUS: Direct wallet address redirection fraud; any funds deposited will go to the thief's wallet",
+      "explanation": "Physical social engineering on ATMs and crypto kiosks frequently uses fake \"maintenance\" signs. Blockchain transactions are irreversible, meaning any sent funds are permanently stolen.",
+      "warningSigns": [
+        "Handwritten or paper notice claiming hardware failure",
+        "Redirection of monetary transaction to an external address",
+        "Pressure to complete transaction outside the certified machine interface"
+      ],
+      "createdAt": "2026-09-10T07:15:32.830Z",
+      "updatedAt": "2026-09-10T07:15:32.830Z"
+    },
+    {
+      "_id": "7922d77bc54089dd59c95d04",
+      "title": "Bank KYC Urgent Suspension SMS Alert",
+      "category": "SCAM_MESSAGE",
+      "difficulty": "EASY",
+      "points": 10,
+      "active": true,
+      "scenario": "SMS from \"+1 (800) 555-0199\":\n\"WellsFargo ALERT: Your checking account access has been restricted due to expired KYC identity documents. Update within 2 hours to avoid $150 penalty and account shutdown: https://wellsfargo-kyc-update.com/id\"",
+      "question": "How should you respond to this text message?",
+      "options": [
+        "SCAM: Do not click the link; verify status only by calling the official customer service number on the back of your card",
+        "SAFE: Click and upload driver's license to avoid the $150 penalty",
+        "SAFE: Reply STOP to prevent any further charges",
+        "SAFE: Forward your bank account number to verify you are a customer"
+      ],
+      "correctAnswer": "SCAM: Do not click the link; verify status only by calling the official customer service number on the back of your card",
+      "explanation": "Financial institutions never send text messages with aggressive penalty threats ($150 fine) or demanding sensitive KYC identification documents via random web links.",
+      "warningSigns": [
+        "Threat of immediate financial penalty ($150 charge)",
+        "Artificial urgency (2-hour deadline)",
+        "Unofficial domain pretending to be Wells Fargo"
+      ],
+      "createdAt": "2026-09-10T07:15:32.831Z",
+      "updatedAt": "2026-09-10T07:15:32.831Z"
+    },
+    {
+      "_id": "44cde3bd1cadc364daba321f",
+      "title": "WhatsApp Work-From-Home High Pay Recruitment",
+      "category": "SCAM_MESSAGE",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "WhatsApp message from unknown international number (+234):\n\"Hello! I am Sarah from Global Talent HR. We saw your resume. Earn $300-$800 daily working 30 minutes from your smartphone by liking hotel YouTube videos. To begin your probationary task, transfer a $50 refundable security deposit to our Telegram supervisor.\"",
+      "question": "What kind of cyber threat is this message?",
+      "options": [
+        "SCAM: Task scam / advance-fee fraud requiring upfront deposits for nonexistent freelance tasks",
+        "SAFE: Modern digital marketing agencies pay people to like social media content",
+        "SAFE: A $50 deposit is reasonable because they promised it is 100% refundable",
+        "SAFE: As long as you communicate on Telegram instead of WhatsApp"
+      ],
+      "correctAnswer": "SCAM: Task scam / advance-fee fraud requiring upfront deposits for nonexistent freelance tasks",
+      "explanation": "This is a textbook \"Task Scam\". Victims are lured with unrealistic daily pay ($300-$800/day for trivial tasks) and asked to send \"security deposits\" or \"upgrade fees\" which are never refunded.",
+      "warningSigns": [
+        "Unsolicited recruiter message from an overseas country code",
+        "Unrealistic compensation for trivial activities (liking videos for $500/day)",
+        "Requirement to pay money upfront (advance fee) to work"
+      ],
+      "createdAt": "2026-09-10T07:15:32.831Z",
+      "updatedAt": "2026-09-10T07:15:32.831Z"
+    },
+    {
+      "_id": "920faebf91d060bdd4e7df68",
+      "title": "Government Tax Authority Immediate Audit Notice",
+      "category": "SCAM_MESSAGE",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "SMS notification from \"IRS-GOV-ALERT\":\n\"INTERNAL REVENUE SERVICE: Final notice regarding outstanding tax deficiency of $1,420.30. A federal warrant will be issued for your arrest by local sheriffs today. Settle immediately with Apple Gift Cards or Bitcoin to cancel the warrant: call 888-921-9922.\"",
+      "question": "What obvious indicator guarantees this is a criminal fraud attempt?",
+      "options": [
+        "Demanding tax debts or official penalties be paid via gift cards or cryptocurrency",
+        "The tax amount has cents included",
+        "Federal agencies only use email, never phone calls",
+        "Local sheriffs only work on weekends"
+      ],
+      "correctAnswer": "Demanding tax debts or official penalties be paid via gift cards or cryptocurrency",
+      "explanation": "No legitimate government tax agency (IRS, HMRC, CRA) EVER requests payments via gift cards, prepaid debit cards, or cryptocurrency, nor do they threaten same-day police arrest over SMS.",
+      "warningSigns": [
+        "Demand for gift cards or cryptocurrency payment",
+        "Threat of immediate police arrest or physical raid",
+        "Informal SMS communication for formal legal notices"
+      ],
+      "createdAt": "2026-09-10T07:15:32.831Z",
+      "updatedAt": "2026-09-10T07:15:32.831Z"
+    },
+    {
+      "_id": "6ae83ab98d89f39818c719ac",
+      "title": "Family Emergency Impersonation (\"Hi Mom/Dad\")",
+      "category": "SCAM_MESSAGE",
+      "difficulty": "HARD",
+      "points": 30,
+      "active": true,
+      "scenario": "SMS message from an unknown local cell number:\n\"Hi Dad, my phone fell in the sink and the screen died. This is my friend's temporary phone. I urgently need to pay my college rent before 5 PM today or I'll be evicted. Can you please Zelle $650 to my landlord's account: landlord-pay@quicktransfers.cc?\"",
+      "question": "What is the correct protocol to handle this emergency claim?",
+      "options": [
+        "SCAM ATTEMPT: Stop and independently contact your child on their known number or call mutual contacts before sending any money",
+        "SAFE: Send the money right away because emergencies require rapid assistance",
+        "SAFE: Send half the money first to test the landlord",
+        "SAFE: Ask the friend for their driver's license"
+      ],
+      "correctAnswer": "SCAM ATTEMPT: Stop and independently contact your child on their known number or call mutual contacts before sending any money",
+      "explanation": "This is the widespread \"Hi Mom/Dad\" family impersonation scam. Scammers exploit parental panic. Always verify claims through alternative out-of-band channels before transferring funds.",
+      "warningSigns": [
+        "Claim of broken device and temporary friend phone",
+        "High emotional pressure and urgent financial deadline",
+        "Request to send funds to an unverified third-party account"
+      ],
+      "createdAt": "2026-09-10T07:15:32.831Z",
+      "updatedAt": "2026-09-10T07:15:32.831Z"
+    },
+    {
+      "_id": "75775cccb00a08d9c534dfd3",
+      "title": "Two-Factor Authentication One-Time Passcode (OTP) Phishing",
+      "category": "SCAM_MESSAGE",
+      "difficulty": "MEDIUM",
+      "points": 20,
+      "active": true,
+      "scenario": "You receive a legitimate automated 2FA code from Google: \"189423 is your Google verification code. Do not share it with anyone.\"\nTen seconds later, you receive a text from a stranger:\n\"Hi, sorry I accidentally mistyped my phone number when signing up for my account and Google sent the code to you. Could you please text me back the 6-digit code so I can login?\"",
+      "question": "What should you do with the 6-digit code?",
+      "options": [
+        "SCAM: Never share the code. An attacker has your password and is trying to bypass your two-factor prompt",
+        "Be polite and text back the 6-digit code since it was an honest mistake",
+        "Post the code in a group chat asking if anyone recognizes it",
+        "Change the last digit and send it to them"
+      ],
+      "correctAnswer": "SCAM: Never share the code. An attacker has your password and is trying to bypass your two-factor prompt",
+      "explanation": "The attacker already compromised your password and triggered the OTP. By convincing you to forward the code, they successfully bypass two-factor authentication and hijack your account.",
+      "warningSigns": [
+        "Unsolicited OTP received without user initiation",
+        "Stranger requesting your private authentication code",
+        "Code message explicitly stating \"Do not share it with anyone\""
+      ],
+      "createdAt": "2026-09-10T07:15:32.832Z",
+      "updatedAt": "2026-09-10T07:15:32.832Z"
+    }
+  ],
+  "gamesessions": [
+    {
+      "_id": "9c64afd9cfe58d1441bd8dbf",
+      "userId": "98404563db6c710faa4b1392",
+      "challengeIds": [
+        "75775cccb00a08d9c534dfd3",
+        "c8062451c1d8d5d40617a9a2",
+        "d908904bc56bc8be52d23626",
+        "74b40284a32d14fde50a17f1"
+      ],
+      "currentChallengeIndex": 3,
+      "score": 40,
+      "lives": 2,
+      "correctAnswers": 2,
+      "wrongAnswers": 1,
+      "status": "IN_PROGRESS",
+      "percentage": 50,
+      "badge": "",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 1
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 0
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 0
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 1
+        }
+      },
+      "startedAt": "2026-09-10T07:19:55.369Z",
+      "completedAt": null,
+      "createdAt": "2026-09-10T07:19:55.369Z",
+      "updatedAt": "2026-09-10T07:22:12.113Z"
+    },
+    {
+      "_id": "58d6dd8bb9d308bc79b01ca0",
+      "userId": "98404563db6c710faa4b1392",
+      "challengeIds": [
+        "acd37c4614dea9dbbc745b71",
+        "44cde3bd1cadc364daba321f",
+        "daf6af8502adcea89cbc8946",
+        "c41a217888ea5f12e9f4cf12"
+      ],
+      "currentChallengeIndex": 3,
+      "score": 90,
+      "lives": 3,
+      "correctAnswers": 4,
+      "wrongAnswers": 0,
+      "status": "COMPLETED",
+      "percentage": 100,
+      "badge": "CYBER SAFETY EXPERT",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 1
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 1
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 1
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 1
+        }
+      },
+      "startedAt": "2026-09-10T07:25:51.404Z",
+      "completedAt": "2026-09-10T07:26:37.665Z",
+      "createdAt": "2026-09-10T07:25:51.405Z",
+      "updatedAt": "2026-09-10T07:26:37.665Z"
+    },
+    {
+      "_id": "48c1351c6ed8e5836bf6ec52",
+      "userId": "4c1a768c5d67f594155779fb",
+      "challengeIds": [
+        "e0e5cff2bb364e22a2bb013e",
+        "75775cccb00a08d9c534dfd3",
+        "daf6af8502adcea89cbc8946",
+        "34d2766bb937ced34ca97d9b"
+      ],
+      "currentChallengeIndex": 0,
+      "score": 0,
+      "lives": 3,
+      "correctAnswers": 0,
+      "wrongAnswers": 0,
+      "status": "IN_PROGRESS",
+      "percentage": 0,
+      "badge": "",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 0
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 0
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 0
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "startedAt": "2026-09-10T07:34:45.690Z",
+      "completedAt": null,
+      "createdAt": "2026-09-10T07:34:45.690Z",
+      "updatedAt": "2026-09-10T07:34:45.691Z"
+    },
+    {
+      "_id": "91717cd7837762ae7e533e28",
+      "userId": "4c1a768c5d67f594155779fb",
+      "challengeIds": [
+        "6ae83ab98d89f39818c719ac",
+        "8716b77b609d6f011ca509ea",
+        "05d83bce2ba1cd5799e5be20",
+        "c41a217888ea5f12e9f4cf12"
+      ],
+      "currentChallengeIndex": 0,
+      "score": 0,
+      "lives": 3,
+      "correctAnswers": 0,
+      "wrongAnswers": 0,
+      "status": "IN_PROGRESS",
+      "percentage": 0,
+      "badge": "",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 0
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 0
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 0
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "startedAt": "2026-09-10T07:34:49.332Z",
+      "completedAt": null,
+      "createdAt": "2026-09-10T07:34:49.332Z",
+      "updatedAt": "2026-09-10T07:34:49.333Z"
+    },
+    {
+      "_id": "39492b06d38e3e994ebc11d5",
+      "userId": "4c1a768c5d67f594155779fb",
+      "challengeIds": [
+        "920faebf91d060bdd4e7df68",
+        "c6e9b6a8df73d7190ee2a082",
+        "986fec25843def4a6791c3dd",
+        "776e9c2240ddc8a8c0392118"
+      ],
+      "currentChallengeIndex": 0,
+      "score": 0,
+      "lives": 2,
+      "correctAnswers": 0,
+      "wrongAnswers": 1,
+      "status": "IN_PROGRESS",
+      "percentage": 0,
+      "badge": "",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 0
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 0
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 0
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "startedAt": "2026-09-10T07:35:21.804Z",
+      "completedAt": null,
+      "createdAt": "2026-09-10T07:35:21.805Z",
+      "updatedAt": "2026-09-10T07:35:21.814Z"
+    },
+    {
+      "_id": "3dfb9db1e88609c0b4a34ea6",
+      "userId": "4c1a768c5d67f594155779fb",
+      "challengeIds": [
+        "34d2766bb937ced34ca97d9b",
+        "daf6af8502adcea89cbc8946",
+        "920faebf91d060bdd4e7df68",
+        "05d83bce2ba1cd5799e5be20"
+      ],
+      "currentChallengeIndex": 0,
+      "score": 10,
+      "lives": 3,
+      "correctAnswers": 1,
+      "wrongAnswers": 0,
+      "status": "IN_PROGRESS",
+      "percentage": 13,
+      "badge": "",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 0
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 0
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 1
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "startedAt": "2026-09-10T07:35:39.837Z",
+      "completedAt": null,
+      "createdAt": "2026-09-10T07:35:39.837Z",
+      "updatedAt": "2026-09-10T07:35:39.845Z"
+    },
+    {
+      "_id": "58b9732e97e4b08fd49e57d7",
+      "userId": "4c1a768c5d67f594155779fb",
+      "challengeIds": [
+        "776e9c2240ddc8a8c0392118",
+        "acd37c4614dea9dbbc745b71",
+        "34d2766bb937ced34ca97d9b",
+        "6ae83ab98d89f39818c719ac"
+      ],
+      "currentChallengeIndex": 0,
+      "score": 0,
+      "lives": 2,
+      "correctAnswers": 0,
+      "wrongAnswers": 1,
+      "status": "IN_PROGRESS",
+      "percentage": 0,
+      "badge": "",
+      "categoryBreakdown": {
+        "PHISHING": {
+          "total": 1,
+          "correct": 0
+        },
+        "PASSWORD": {
+          "total": 1,
+          "correct": 0
+        },
+        "FAKE_QR": {
+          "total": 1,
+          "correct": 0
+        },
+        "SCAM_MESSAGE": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "startedAt": "2026-09-10T07:35:43.918Z",
+      "completedAt": null,
+      "createdAt": "2026-09-10T07:35:43.918Z",
+      "updatedAt": "2026-09-10T07:35:43.927Z"
+    }
+  ],
+  "answers": [
+    {
+      "_id": "5a1882a5ef5c91ef6f302374",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "9c64afd9cfe58d1441bd8dbf",
+      "challengeId": "75775cccb00a08d9c534dfd3",
+      "selectedAnswer": "SCAM: Never share the code. An attacker has your password and is trying to bypass your two-factor prompt",
+      "correctAnswer": "SCAM: Never share the code. An attacker has your password and is trying to bypass your two-factor prompt",
+      "isCorrect": true,
+      "pointsEarned": 20,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:20:29.913Z",
+      "createdAt": "2026-09-10T07:20:29.914Z",
+      "updatedAt": "2026-09-10T07:20:29.914Z"
+    },
+    {
+      "_id": "945c0d8b908db3344e428e5f",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "9c64afd9cfe58d1441bd8dbf",
+      "challengeId": "c8062451c1d8d5d40617a9a2",
+      "selectedAnswer": "Phishing: Smishing/phishing ploy designed to harvest credit card CVV and billing information",
+      "correctAnswer": "Phishing: Smishing/phishing ploy designed to harvest credit card CVV and billing information",
+      "isCorrect": true,
+      "pointsEarned": 20,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:21:16.996Z",
+      "createdAt": "2026-09-10T07:21:16.996Z",
+      "updatedAt": "2026-09-10T07:21:16.996Z"
+    },
+    {
+      "_id": "698e7543d53275ba37e98ac5",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "9c64afd9cfe58d1441bd8dbf",
+      "challengeId": "d908904bc56bc8be52d23626",
+      "selectedAnswer": "qwertyuiop12345",
+      "correctAnswer": "Correct-Horse-Battery-Staple#982",
+      "isCorrect": false,
+      "pointsEarned": 0,
+      "lifeLost": true,
+      "answeredAt": "2026-09-10T07:21:47.600Z",
+      "createdAt": "2026-09-10T07:21:47.600Z",
+      "updatedAt": "2026-09-10T07:21:47.600Z"
+    },
+    {
+      "_id": "51788204eec28863b0bd63e9",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "58d6dd8bb9d308bc79b01ca0",
+      "challengeId": "acd37c4614dea9dbbc745b71",
+      "selectedAnswer": "Password B is vastly stronger because length contributes exponentially more entropy than leetspeak",
+      "correctAnswer": "Password B is vastly stronger because length contributes exponentially more entropy than leetspeak",
+      "isCorrect": true,
+      "pointsEarned": 30,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:26:14.111Z",
+      "createdAt": "2026-09-10T07:26:14.111Z",
+      "updatedAt": "2026-09-10T07:26:14.111Z"
+    },
+    {
+      "_id": "9c2a2ddfd367dd5f4b1d6760",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "58d6dd8bb9d308bc79b01ca0",
+      "challengeId": "44cde3bd1cadc364daba321f",
+      "selectedAnswer": "SCAM: Task scam / advance-fee fraud requiring upfront deposits for nonexistent freelance tasks",
+      "correctAnswer": "SCAM: Task scam / advance-fee fraud requiring upfront deposits for nonexistent freelance tasks",
+      "isCorrect": true,
+      "pointsEarned": 20,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:26:22.827Z",
+      "createdAt": "2026-09-10T07:26:22.827Z",
+      "updatedAt": "2026-09-10T07:26:22.827Z"
+    },
+    {
+      "_id": "d0a6c5561d39b61ebbdfd0ae",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "58d6dd8bb9d308bc79b01ca0",
+      "challengeId": "daf6af8502adcea89cbc8946",
+      "selectedAnswer": "Mark email as Phishing and visit your bank directly via the official mobile app or bookmarked URL",
+      "correctAnswer": "Mark email as Phishing and visit your bank directly via the official mobile app or bookmarked URL",
+      "isCorrect": true,
+      "pointsEarned": 10,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:26:29.076Z",
+      "createdAt": "2026-09-10T07:26:29.076Z",
+      "updatedAt": "2026-09-10T07:26:29.076Z"
+    },
+    {
+      "_id": "0a6cd77efd9d61e3c9e94d27",
+      "userId": "98404563db6c710faa4b1392",
+      "gameId": "58d6dd8bb9d308bc79b01ca0",
+      "challengeId": "c41a217888ea5f12e9f4cf12",
+      "selectedAnswer": "SUSPICIOUS: Installing root certificates or configuration profiles allows Man-In-The-Middle (MITM) decryption of all your encrypted web traffic",
+      "correctAnswer": "SUSPICIOUS: Installing root certificates or configuration profiles allows Man-In-The-Middle (MITM) decryption of all your encrypted web traffic",
+      "isCorrect": true,
+      "pointsEarned": 30,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:26:37.664Z",
+      "createdAt": "2026-09-10T07:26:37.664Z",
+      "updatedAt": "2026-09-10T07:26:37.664Z"
+    },
+    {
+      "_id": "01a7b93614fa5eaac9829196",
+      "userId": "4c1a768c5d67f594155779fb",
+      "gameId": "39492b06d38e3e994ebc11d5",
+      "challengeId": "920faebf91d060bdd4e7df68",
+      "selectedAnswer": "The tax amount has cents included",
+      "correctAnswer": "Demanding tax debts or official penalties be paid via gift cards or cryptocurrency",
+      "isCorrect": false,
+      "pointsEarned": 0,
+      "lifeLost": true,
+      "answeredAt": "2026-09-10T07:35:21.813Z",
+      "createdAt": "2026-09-10T07:35:21.813Z",
+      "updatedAt": "2026-09-10T07:35:21.813Z"
+    },
+    {
+      "_id": "1f21652e6f48c9655b8e7e10",
+      "userId": "4c1a768c5d67f594155779fb",
+      "gameId": "3dfb9db1e88609c0b4a34ea6",
+      "challengeId": "34d2766bb937ced34ca97d9b",
+      "selectedAnswer": "SUSPICIOUS: Physical sticker tampering (quishing) directing to an unofficial domain",
+      "correctAnswer": "SUSPICIOUS: Physical sticker tampering (quishing) directing to an unofficial domain",
+      "isCorrect": true,
+      "pointsEarned": 10,
+      "lifeLost": false,
+      "answeredAt": "2026-09-10T07:35:39.845Z",
+      "createdAt": "2026-09-10T07:35:39.845Z",
+      "updatedAt": "2026-09-10T07:35:39.845Z"
+    },
+    {
+      "_id": "8896606b1fcb094dedfa7942",
+      "userId": "4c1a768c5d67f594155779fb",
+      "gameId": "58b9732e97e4b08fd49e57d7",
+      "challengeId": "776e9c2240ddc8a8c0392118",
+      "selectedAnswer": "It is legitimate because Azure and Microsoft domains are trusted by default",
+      "correctAnswer": "It is a sophisticated subdomain spoofing attack targeting corporate credentials",
+      "isCorrect": false,
+      "pointsEarned": 0,
+      "lifeLost": true,
+      "answeredAt": "2026-09-10T07:35:43.926Z",
+      "createdAt": "2026-09-10T07:35:43.926Z",
+      "updatedAt": "2026-09-10T07:35:43.926Z"
+    }
+  ],
+  "achievements": [
+    {
+      "_id": "e11e0ad68ce8baeafcbc6b47",
+      "code": "PHISHING_HUNTER",
+      "name": "Phishing Hunter",
+      "description": "Identify 5 phishing attempts correctly.",
+      "icon": "Fish",
+      "condition": "Answer 5 phishing challenges correctly",
+      "createdAt": "2026-09-10T07:15:32.833Z",
+      "updatedAt": "2026-09-10T07:15:32.833Z"
+    },
+    {
+      "_id": "47c13e005282bdf3bdfaa0d8",
+      "code": "PASSWORD_GUARDIAN",
+      "name": "Password Guardian",
+      "description": "Correctly answer 5 password challenges.",
+      "icon": "Lock",
+      "condition": "Answer 5 password challenges correctly",
+      "createdAt": "2026-09-10T07:15:32.833Z",
+      "updatedAt": "2026-09-10T07:15:32.833Z"
+    },
+    {
+      "_id": "5b5727f43bcd7aa6c8ed760c",
+      "code": "QR_DETECTIVE",
+      "name": "QR Detective",
+      "description": "Correctly identify 5 suspicious QR scenarios.",
+      "icon": "QrCode",
+      "condition": "Answer 5 fake QR challenges correctly",
+      "createdAt": "2026-09-10T07:15:32.833Z",
+      "updatedAt": "2026-09-10T07:15:32.833Z"
+    },
+    {
+      "_id": "f19c1b156d4712b9fb010531",
+      "code": "SCAM_SPOTTER",
+      "name": "Scam Spotter",
+      "description": "Correctly identify 5 scam messages.",
+      "icon": "MessageSquareWarning",
+      "condition": "Answer 5 scam messages correctly",
+      "createdAt": "2026-09-10T07:15:32.834Z",
+      "updatedAt": "2026-09-10T07:15:32.834Z"
+    },
+    {
+      "_id": "0c9e746543e524aa3b3a3947",
+      "code": "CYBER_SAFETY_EXPERT",
+      "name": "Cyber Safety Expert",
+      "description": "Achieve 76% or higher on an escape room run.",
+      "icon": "Award",
+      "condition": "Score >= 76% in an escape room session",
+      "createdAt": "2026-09-10T07:15:32.834Z",
+      "updatedAt": "2026-09-10T07:15:32.834Z"
+    },
+    {
+      "_id": "8345f5acc6ee4b2ec011f3df",
+      "code": "FLAWLESS_ESCAPE",
+      "name": "Flawless Escape",
+      "description": "Escape without losing any lives (all 3 hearts intact).",
+      "icon": "ShieldCheck",
+      "condition": "Complete escape room with 3 lives remaining",
+      "createdAt": "2026-09-10T07:15:32.834Z",
+      "updatedAt": "2026-09-10T07:15:32.834Z"
+    },
+    {
+      "_id": "e716f2bed88b8d8b7ec62fc6",
+      "code": "FIRST_ESCAPE",
+      "name": "Escape Artist",
+      "description": "Successfully unlock and escape the digital safety room.",
+      "icon": "Key",
+      "condition": "Complete 1 full escape session",
+      "createdAt": "2026-09-10T07:15:32.834Z",
+      "updatedAt": "2026-09-10T07:15:32.834Z"
+    }
+  ],
+  "userachievements": [
+    {
+      "_id": "928c7719ecb0489b361cd349",
+      "userId": "98404563db6c710faa4b1392",
+      "achievementCode": "CYBER_SAFETY_EXPERT",
+      "name": "Cyber Safety Expert",
+      "description": "Achieve 76% or higher on an escape room run.",
+      "icon": "Award",
+      "earnedAt": "2026-09-10T07:26:37.669Z",
+      "createdAt": "2026-09-10T07:26:37.669Z",
+      "updatedAt": "2026-09-10T07:26:37.669Z"
+    },
+    {
+      "_id": "8ff61ecd9c3757c26d7571f5",
+      "userId": "98404563db6c710faa4b1392",
+      "achievementCode": "FLAWLESS_ESCAPE",
+      "name": "Flawless Escape",
+      "description": "Escape without losing any lives (3/3 hearts intact).",
+      "icon": "ShieldCheck",
+      "earnedAt": "2026-09-10T07:26:37.670Z",
+      "createdAt": "2026-09-10T07:26:37.671Z",
+      "updatedAt": "2026-09-10T07:26:37.671Z"
+    },
+    {
+      "_id": "fd5659a4f03d5738bcf56fc7",
+      "userId": "98404563db6c710faa4b1392",
+      "achievementCode": "FIRST_ESCAPE",
+      "name": "Escape Artist",
+      "description": "Successfully unlock and escape the digital safety room.",
+      "icon": "Key",
+      "earnedAt": "2026-09-10T07:26:37.672Z",
+      "createdAt": "2026-09-10T07:26:37.672Z",
+      "updatedAt": "2026-09-10T07:26:37.672Z"
+    }
+  ]
+}

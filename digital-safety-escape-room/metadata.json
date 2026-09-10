@@ -1,0 +1,6 @@
+{
+  "name": "Digital Safety Escape Room",
+  "description": "A gamified cybersecurity awareness escape room where you analyze realistic digital threats, protect your lives, and unlock the exit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
