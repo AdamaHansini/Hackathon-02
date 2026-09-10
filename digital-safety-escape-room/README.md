@@ -19,6 +19,10 @@ Deploy them as two separate Render services.
 - Publish Directory: `dist`
 - Environment variable: `VITE_API_URL=https://YOUR-BACKEND-SERVICE.onrender.com/api`
 
+If the frontend was created as a Render Web Service instead of a Static Site,
+use `npm install && npm run build` as the build command and `npm start` as the
+start command. A Static Site does not need a start command.
+
 ### Backend Web Service
 
 - Root Directory: `backend`
