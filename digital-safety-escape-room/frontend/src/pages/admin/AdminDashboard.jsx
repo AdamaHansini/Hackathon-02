@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { 
   ShieldAlert, 
   ShieldCheck, 
-  Users, 
   Gamepad2, 
   CheckCircle2, 
   Award, 
@@ -107,13 +106,6 @@ export default function AdminDashboard({ navigate }) {
             Manage Challenges
           </button>
 
-          <button
-            onClick={() => navigate('admin-users')}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl font-bold text-xs text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors border border-slate-200 cursor-pointer"
-          >
-            <Users className="w-4 h-4 text-slate-600" />
-            Manage Users
-          </button>
         </div>
       </div>
 
@@ -376,25 +368,6 @@ export default function AdminDashboard({ navigate }) {
           <ArrowUpRight className="w-5 h-5 text-slate-400 group-hover:text-slate-900 transition-colors" />
         </div>
 
-        <div 
-          onClick={() => navigate('admin-users')}
-          className="bg-white p-6 rounded-3xl border border-slate-200 shadow-xs hover:shadow-md transition-all cursor-pointer group flex items-center justify-between"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-slate-900 text-indigo-400 flex items-center justify-center group-hover:scale-105 transition-transform">
-              <Users className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                Cadet Roster & Performance
-              </h3>
-              <p className="text-xs text-slate-500 font-medium mt-0.5">
-                Audit individual user performance, manage roles, or reset cadet stats.
-              </p>
-            </div>
-          </div>
-          <ArrowUpRight className="w-5 h-5 text-slate-400 group-hover:text-slate-900 transition-colors" />
-        </div>
       </div>
     </div>
   );

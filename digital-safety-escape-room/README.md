@@ -29,7 +29,9 @@ refreshed.
 - Build Command: `npm install && npm run build`
 - Start Command: `npm start`
 - Environment variables: set `PORT` (Render supplies this automatically),
-  `MONGO_URI`, `JWT_SECRET`, and `CLIENT_URL` to the deployed Vercel URL.
+  `MONGO_URI`, `JWT_SECRET`, `GEMINI_API_KEY`, and `CLIENT_URL` to the deployed
+  Vercel URL. Keep `GEMINI_API_KEY` on Render only; never add it as a `VITE_`
+  variable because Vite exposes those values to every browser user.
 
 The backend build creates `backend/dist/server.cjs`. Do not use
 `node dist/server.cjs` from the repository root; Render must use `backend`

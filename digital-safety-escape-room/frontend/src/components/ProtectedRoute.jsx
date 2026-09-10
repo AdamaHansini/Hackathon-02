@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
 
-export default function ProtectedRoute({ children, adminOnly = false, navigate }) {
+export default function ProtectedRoute({ children, adminOnly = false, cadetOnly = false, navigate }) {
   const { isAuthenticated, isAdmin, loading } = useAuth();
 
   if (loading) {
@@ -20,6 +20,11 @@ export default function ProtectedRoute({ children, adminOnly = false, navigate }
 
   if (adminOnly && !isAdmin) {
     navigate('dashboard');
+    return null;
+  }
+
+  if (cadetOnly && isAdmin) {
+    navigate('admin');
     return null;
   }
 

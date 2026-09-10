@@ -23,7 +23,6 @@ import { useGame } from './context/GameContext';
 // Admin Pages
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ManageChallenges from './pages/admin/ManageChallenges';
-import ManageUsers from './pages/admin/ManageUsers';
 
 export default function App() {
   return (
@@ -82,37 +81,37 @@ function AppShell() {
         return <Register navigate={navigate} />;
       case 'dashboard':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <Dashboard navigate={navigate} />
           </ProtectedRoute>
         );
       case 'game':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <Game navigate={navigate} />
           </ProtectedRoute>
         );
       case 'game-over':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <GameOver navigate={navigate} />
           </ProtectedRoute>
         );
       case 'result':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <Result navigate={navigate} />
           </ProtectedRoute>
         );
       case 'history':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <History navigate={navigate} />
           </ProtectedRoute>
         );
       case 'performance':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <Performance navigate={navigate} />
           </ProtectedRoute>
         );
@@ -120,7 +119,7 @@ function AppShell() {
         return <Leaderboard navigate={navigate} />;
       case 'profile':
         return (
-          <ProtectedRoute navigate={navigate}>
+          <ProtectedRoute cadetOnly navigate={navigate}>
             <Profile navigate={navigate} />
           </ProtectedRoute>
         );
@@ -134,12 +133,6 @@ function AppShell() {
         return (
           <ProtectedRoute adminOnly navigate={navigate}>
             <ManageChallenges navigate={navigate} />
-          </ProtectedRoute>
-        );
-      case 'admin-users':
-        return (
-          <ProtectedRoute adminOnly navigate={navigate}>
-            <ManageUsers navigate={navigate} />
           </ProtectedRoute>
         );
       default:

@@ -13,13 +13,6 @@ router.use(protect, adminOnly);
 router.get('/statistics', adminController.getStatistics);
 router.get('/analytics', adminController.getStatistics);
 
-// User Cadets Management
-router.get('/users', adminController.getUsers);
-router.get('/users/:id/performance', adminController.getUserPerformance);
-router.put('/users/:id/role', adminController.updateUserRole);
-router.post('/users/:id/reset', adminController.resetUserStats);
-router.delete('/users/:id', adminController.deleteUser);
-
 // Challenge Management (CRUD + activation toggle)
 router.get('/challenges', challengeController.getAll);
 router.post('/challenges', challengeController.create);
