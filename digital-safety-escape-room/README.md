@@ -10,25 +10,26 @@ digital-safety-escape-room/
 └── backend/
 ```
 
-Deploy them as two separate Render services.
+Deploy the backend on Render and the frontend on Vercel.
 
-### Frontend Static Site
+### Frontend Vercel Project
 
 - Root Directory: `frontend`
-- Build Command: `npm install && npm run build`
-- Publish Directory: `dist`
+- Framework Preset: `Vite`
+- Build Command: `npm run build`
+- Output Directory: `dist`
 - Environment variable: `VITE_API_URL=https://YOUR-BACKEND-SERVICE.onrender.com/api`
 
-If the frontend was created as a Render Web Service instead of a Static Site,
-use `npm install && npm run build` as the build command and `npm start` as the
-start command. A Static Site does not need a start command.
+The `frontend/vercel.json` file preserves client-side routes when a page is
+refreshed.
 
 ### Backend Web Service
 
 - Root Directory: `backend`
 - Build Command: `npm install && npm run build`
 - Start Command: `npm start`
-- Environment variables: copy the values from `backend/.env.example`
+- Environment variables: set `PORT` (Render supplies this automatically),
+  `MONGO_URI`, `JWT_SECRET`, and `CLIENT_URL` to the deployed Vercel URL.
 
 The backend build creates `backend/dist/server.cjs`. Do not use
 `node dist/server.cjs` from the repository root; Render must use `backend`
