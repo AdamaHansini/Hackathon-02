@@ -26,10 +26,15 @@ async function startServer() {
       .map(origin => origin.trim())
       .filter(Boolean);
     const requestOrigin = req.headers.origin;
-    const allowedOrigin = requestOrigin && allowedOrigins.includes(requestOrigin)
-      ? requestOrigin
-      : allowedOrigins[0];
-    res.header('Access-Control-Allow-Origin', allowedOrigin);
+    const isProjectVercelPreview = Boolean(
+      requestOrigin &&
+      /^https:\/\/digitalsafetyescaperoom-[a-z0-9-]+\.vercel\.app$/i.test(requestOrigin)
+    );
+    const isAllowedOrigin = requestOrigin &&
+      (allowedOrigins.includes(requestOrigin) || isProjectVercelPreview);
+    if (isAllowedOrigin) {
+      res.header('Access-Control-Allow-Origin', requestOrigin);
+    }
     res.header('Vary', 'Origin');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
